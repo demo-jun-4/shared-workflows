@@ -1,19 +1,18 @@
 name: Aqua Scanner
 on:
   workflow_call:
-    inputs:
-      AQUA_URL:
-        description: "Aqua URL"
-        type: string
-      CSPM_URL:
-        description: "CSPM URL"
-        type: string
     secrets:
       AQUA_KEY:
         description: "Aqua Key"
         required: true
       AQUA_SECRET:
         description: "Aqua Secret"
+        required: true
+      AQUA_URL:
+        description: "Aqua URL"
+        required: true
+      CSPM_URL:
+        description: "CSPM URL"
         required: true
         
 jobs:
